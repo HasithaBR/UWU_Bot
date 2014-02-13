@@ -1,0 +1,3 @@
+#! /bin/sh
+
+gnome-terminal 	--tab -e "home/hasitha/catkin_ws/src/UWU_Bot/Scripts/openniLaunch.sh" --tab -e "home/hasitha/catkin_ws/src/UWU_Bot/Scripts/MapBuilding.sh" --tab -e "home/hasitha/catkin_ws/src/UWU_Bot/Scripts/uwu_bot_node.sh" --tab -e "home/hasitha/catkin_ws/src/UWU_Bot/Scripts/kbTeleop.sh" --tab -e "home/hasitha/catkin_ws/src/UWU_Bot/Scripts/Rviz.sh" --tab -e "home/hasitha/catkin_ws/src/UWU_Bot/Scripts/mapping.sh"

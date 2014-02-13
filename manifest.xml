@@ -1,0 +1,21 @@
+<package>
+  <description brief="UWU_Bot">
+
+     UWU_Bot
+
+  </description>
+  <author>HasithaRathnayake</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/UWU_Bot</url>
+  <depend package="geometry_msgs"/>
+  <depend package="sensor_msgs" />
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="urdf"/>
+  <depend package="kdl_parser" />
+  <maintainer email="hasitharathnayake@live.com">HasithaBR</maintainer>
+
+</package>
+
+

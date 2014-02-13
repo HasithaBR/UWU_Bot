@@ -1,0 +1,17 @@
+roslaunch UWU_Bot openni.launch
+roslaunch UWU_Bot MapBuilding.launch
+rosrun		depthimage_to_laserscan depthimage_to_laserscan	image:=/camera/depth/image_raw
+**Rviz will slow down
+rosrun rviz rviz	Load UWU_Bot/launch/MapBuilding.vcg(Fuerte) OR UWU_Bot/launch/MapBuilding.rviz(Grovooy+) in Rviz
+{
+rosservice call /generate_graph
+rosservice call /solve_graph
+rosservice call /save_pcd_map /catkin_ws/src/UWU_Bot/Maps/Map001.PCD
+}
+rosrun UWU_Bot uwu_bot_serial.py
+rosrun UWU_Bot Navigation.py
+
+rxgrapg
+
+roscd UWU_Bot
+roslaunch UWU_Bot display.launch model:=urdf/UWU_Bot.urdf
